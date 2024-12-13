@@ -15,18 +15,20 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/5c9555d31b.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
     <header>
       <nav>
-        <a href="#"><img src="assets/images/logo.png" alt="Logo du site"></a>
-        <ul>  
+        <a href="#"><img id="logo" src="assets/images/logo.png" alt="Logo du site"></a>
+        <ul class="nav-list">  
           <li class="hidden-btn"><a href="#">Produits</a></li>
           <li class="hidden-btn"><a href="#">Contact</a></li>
-          <li class="Connexion-btn"><a href="#">Connexion</a></li>
-          <li class="Inscription-btn"><a href="#">Inscription</a></li>
+          <li class="auth-btn signin-btn"><a href="#">Connexion</a></li>
+          <li class="auth-btn black-btn white"><a href="#">Inscription</a></li>
         </ul>
+        <i class="burger fa-solid fa-bars"></i>
       </nav>
     </header>
 
@@ -41,69 +43,84 @@
                 </div>
             </div>
             <a class="hidden-btn">&#129128; Précedent</a>
-        </div>
+        </section>
 
-        <section class="products-container">
-            <div class="product productSmall product-one">
+        <section class="products-section">
+            <div class="products-container">
+            <div class="product-card productSmall product-one">
                 <img src="assets/images/macbook-air.jpg" alt="Mackbook Air">
+               <div class="products-Info-add">
                 <div class="productDetails">
                     <h2>MacBook Air</h2>
                     <p>1600 €</p>   
                 </div>
                 <a href="#" class="btn cta-btn">Ajouter</a>
+               </div>
             </div>
-            <div class="product productLarge product-two">
+            <div class="product-card productLarge product-two">
                 <img src="assets/images/odyssey.jpg" alt="Samsung Odyssey G9">
+               <div class="products-Info-add">
                 <div class="productDetails">
                     <h2>Samsung Odyssey G9</h2>
                     <p> 1300 €</p>   
                 </div>
                 <a href="#" class="btn cta-btn">Ajouter</a>
+               </div>
             </div>
-            <div class="product productSmall product-three">
+            <div class="product-card productSmall product-three">
                 <img src="assets/images/rog-stryx.jpg" alt="Asus Rog Stryx">
+               <div class="products-Info-add">
                 <div class="productDetails">
                     <h2>Asus Rog Stryx</h2>
                     <p>1999 €</p>   
                 </div>
                 <a href="#" class="btn cta-btn">Ajouter</a>
+               </div>
             </div>
 
-            <div class="product productLarge product-four">
+            <div class="product-card productLarge product-four">
                 <img src="assets/images/triple-screen.jpg" alt="Double écran">
+               <div class="products-Info-add">
                 <div class="productDetails">
                     <h2>Double écran 14"</h2>
                     <p>399 €</p>   
                 </div>
                 <a href="#" class="btn secondary-btn">Indisponible</a>
+               </div>
             </div>
 
-            <div class="product productSmall product-five">
+            <div class="product-card productSmall product-five">
                 <img src="assets/images/vivobook.png" alt="Asus">
+               <div class="products-Info-add">
                 <div class="productDetails">
                     <h2>Asus Vivobook"</h2>
                     <p>1300 €</p>   
                 </div>
                 <a href="#" class="btn secondary-btn">Indisponible</a>
+               </div>
             </div>
 
-            <div class="product productSmall product-six">
+            <div class="product-card productSmall product-six">
                 <img src="assets/images/thinkpad.jpg" alt="ThinkPad X1 Carbon">
+               <div class="products-Info-add">
                 <div class="productDetails">
                     <h2>ThinkPad X1 Carbon</h2>
                     <p>1499 €</p>   
                 </div>
                 <a href="#" class="btn cta-btn">Ajouter</a>
+               </div>
             </div>
+        </div>
         </section>
      
         <section class="pagination-container">
             <ul class="pagination-list">
-                <li class = "black-btn" href="#">1</li>
-                <li class="hidden-btn" href="#">3</li>
+                <li class = "black-btn"> <a href="#"> 1</a></li>
+                <li class = "hidden-btn"> <a href="#"> 2</a></li>
+                <li class = "hidden-btn"> <a href="#"> 3</a></li>
                <li>...</li>
-                <li class="hidden-btn" href="#">19</li>
-                <li class="hidden-btn" href="#">20</li>
+               <li class = "hidden-btn"> <a href="#"> 19</a></li>
+               <li class = "hidden-btn"> <a href="#"> 20</a></li>
             </ul>
            
         </section>
